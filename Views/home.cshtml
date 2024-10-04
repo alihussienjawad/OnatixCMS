@@ -1,0 +1,405 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage
+@{
+	Layout = "master.cshtml";
+}
+ 
+
+ 
+
+    <!-- Content -->
+    <div>
+    <div class="content-background  mb-1">
+        <div class="row  w-100 d-flex justify-content-center">
+            <div class="col-7  d-flex flex-column">
+                <div class="row  mt-5">
+                    <h1 class="We-bring mt-5">
+                        @Model.Value("title")
+                    </h1>
+                    
+                </div>
+                <div class="row mt-3 ">
+                    <div class="paraghrph w-50">
+                        @Model.Value("title2")
+                    </div>
+                </div>
+                <div class="row mt-3 ">
+                <a href="./contact.html" class="btn btn-secondary w-25">
+                   Contact us 
+                </a>
+            </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="container mb-2">
+        <div class="row">
+            <div class="col-7 ">
+                <div class="row ">
+                    <h5 class="about mt-5">About us</h5>
+                    <h2 class="experience">
+                        @Model.Value("subTitle")
+                    </h2>
+                    <p class="paraghrph-1">
+                        @Model.Value("subTitleDescription")
+                    </p>
+                </div>
+                <div class="row signature ">
+                    <div class="col-2 ">
+                        <img src="./assest/signatures.jpg" alt="Beskrivning av bilden" class="img-fluid">
+                        <p style="font-size: 16px;">Tina Fox - CEO & Founder</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-5 col-0 ">
+
+                <div class="card w-100 col">
+                    <!-- Black header with white text -->
+                    <div class="header  text-white text-center">
+                        <h3 class="Request-a-Call-Back">Request a Call Back</h3>
+                    </div>
+                    <P class="paraghraph-2">
+                        Dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur excepteur sint occaecat
+                    </P>
+                    <form class="w-70 mx-auto">
+                        <!-- Name input -->
+                        <div class="mb-3">
+                            <label for="name" class="form-label"></label>
+                            <input type="text" class="form-control" id="name" placeholder="Name" required>
+                        </div>
+
+                        <!-- Email input -->
+                        <div class="mb-3">
+                            <label for="email" class="form-label"></label>
+                            <input type="email" class="form-control" id="email" placeholder="Email address" required>
+                        </div>
+
+                        <!-- Phone input -->
+                        <div class="mb-3">
+                            <label for="phone" class="form-label"></label>
+                            <input type="tel" class="form-control" id="phone" placeholder="phone" required>
+                        </div>
+
+                        <!-- Dropdown for financial consulting -->
+                        <div class="mb-3">
+                            <label for="service" class="form-label"></label>
+                            <select class="form-select" id="service" required>
+                                <option selected disabled>Financial Consulting</option>
+                                <option value="financial-consulting">Financial Consulting</option>
+                                <option value="tax-planning">Tax Planning</option>
+                                <option value="investment-advice">Investment Advice</option>
+                                <option value="wealth-management">Wealth Management</option>
+                            </select>
+                        </div>
+
+                        <!-- Submit button -->
+                        <div class="d-grid mb-5 ">
+                            <button type="button" class="btn btn-secondary btn-2 ">Submit</button>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+     <div class="row">
+            <div class="col-12" style="background-color: #F7F7F7;">
+
+                 <div class="row mt-5 OUR-SERVICES">
+                    <span>OUR SERVICES</span>
+                </div>
+                <div class="row">
+                    <div class="col-12 d-flex justify-content-center">
+                    <div class="Business-Faster w-50 ">
+                             @Model.Value("ourservices")
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="container card-row mt-4">
+
+                    <div class="row  mb-5">
+                        <!-- Column 1 -->
+                        <div class="col-md-4">
+
+                            <div class="card mb-4">
+                                <h5 class="card-title">
+                                    <span class="title">Risk Management</span>
+                                </h5>
+                                <img src="./assest/cart 1.jpg" class="card-img-top" alt="Image 1">
+                                <div class="card-body">
+
+                                    <p class="card-text">
+                                        <div class="dec-r">
+                                            Dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                        </div>
+                                    </p>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="col-md-4">
+                            <div class="card">
+                                <h5 class="card-title">
+                                    <span class="title">Tax and Trusts</span>
+                                </h5>
+                                <img src="./assest/cart4.jpg" class="card-img-top" alt="Image 2">
+                                <div class="card-body">
+
+                                    <p class="card-text  ">
+                                        <div class="dec-r">
+                                            Dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                        </div>
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Column 2 -->
+                        <div class="col-md-4">
+                            <div class="card mb-4">
+                                <h5 class="card-title">
+                                    <span class="title">Bonds & Commodities</span>
+                                </h5>
+                                <img src="./assest/cart2.jpg" class="card-img-top" alt="Image 3">
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        <div class="dec-r">
+                                            Dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                        </div>
+                                    </p>
+                                </div>
+                            </div>
+                            </div>
+                          <div class="col-md-4">
+                            <div class="card">
+                                <h5 class="card-title">
+                                    <span class="title">Financial Advisor</span>
+                                </h5>
+                                <img src="./assest/cart5.jpg" class="card-img-top" alt="Image 4">
+                                <div class="card-body">
+
+                                    <p class="card-text">
+                                        <div class="dec-r">
+                                            Dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                        </div>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Column 3 -->
+                        <div class="col-md-4" >
+                            <div class="card">
+                                <h5 class="card-title">
+                                    <span class="title">Assurance & Audits</span>
+                                </h5>
+                                <img src="./assest/cart3.jpg" class="card-img-top" alt="Image 5">
+                                <div class="card-body">
+
+                                    <p class="card-text">
+                                        <div class="dec-r">
+                                            Dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                        </div>
+                                    </p>
+                                </div>
+                            </div>
+                            </div>
+                    <div class="col-md-4">
+                            <div class="card">
+                                <h5 class="card-title">
+                                    <span class="title">
+                                        Statistic Advisors
+                                    </span>
+                                </h5>
+                                <img src="./assest/cart6.jpg" class="card-img-top" alt="Image 6">
+                                <div class="card-body">
+
+                                    <p class="card-text">
+                                        <div class="dec-r">
+                                            Dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                                        </div>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+     </div>
+
+   
+
+    <div class="container mt-1">
+        <div class="content-background-0  d-flex justify-content-center mb-1 ">
+            <div class="row">
+                <div class="col-12">
+                    <div class="We-trusted mt-4">@Model.Value("trusted")</div>
+                    <div class="We-trusted-0 ">@Model.Value("trustedTitle")</div>
+                    <a href="./contact.html" class="btn btn-secondary mt-2 Read-our-story">
+                        Read our story 
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 mb-5" style="background-color: #4F5955;">
+
+            <div class="row mt-5 text-center">
+                <div class="s-story">SUCCESS STORIES</div>
+                <div class="s-story-1">Success story</div>
+            </div>
+            <div class="row d-flex justify-content-center" >
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class="coll-1">
+                        @Model.Value("story1")
+                    </div>
+                    <div class='story-dis'>
+                        More than 100 customers has been served
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class='projects'>
+                        <div class="coll-1">
+                            @Model.Value("story2")
+                        </div>
+                        <div class='story-dis'>
+                            More than 370 projects has been completed
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <div class='branches'>
+                        <div class='coll-1'>
+                            @Model.Value("story3")
+                        </div>
+                        <div class='story-dis'>
+                            More than 125 branches has been established in Europe and America
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="row mt-5 text-center">
+                <div class="col-12 d-flex justify-content-center">
+                    <img src="./assest/img4.jpg" class="img-fluid marr-2" alt="Beskrivning av bilden">
+
+                </div>
+                </div>
+            
+      
+        </div>
+
+
+
+        <div class="col-12 " style="margin-top:100px;"> 
+
+     
+            <div class="row mt-5 mb-3 text-center">
+                <div id='ourprojects' class='text-center ourprojects'>
+                    OUR PROJECTS
+                </div>
+
+                <div class='recentprojects'>
+                    Recent projects
+                  
+                </div>
+                 
+                </div>
+
+                <div class="container" >
+                    <div class="row">
+                        <!-- Card 1 -->
+                    <div class="col-sm-12 col-md-6 col-lg-3 mb-2 mb-2 mt-2">
+                            <div class="custom-card" style="background-image: url('./assest/cart-2-1.png');">
+                                <div class="card-content" style="min-height:100px;">
+                                    <h6 class="card-title">Annual Report for Juva Inc.</h6>
+                                    <p class="card-text">Financial Services <span class="arrow">></span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 2 -->
+                    <div class="col-sm-12 col-md-6 col-lg-3 mb-2 mb-2 mt-2">
+                            <div class="custom-card" style="background-image: url('./assest/cart-2-2.png');">
+                            <div class="card-content" style="min-height:100px;">
+                                    <h3 class="card-title">Business Insights for SP Group Inc.</h3>
+                                    <p class="card-text">Financial Services <span class="arrow">></span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 3 -->
+                    <div class="col-sm-12 col-md-6 col-lg-3 mb-2 mb-2 mt-2">
+                            <div class="custom-card" style="background-image: url('./assest/cart-2-3.png');">
+                            <div class="card-content" style="min-height:100px;">
+                                    <h3 class="card-title">Financial Advisors to Irra Corp Inc.</h3>
+                                    <p class="card-text">Financial Services<span class="arrow">></span></p>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="col-sm-12 col-md-6 col-lg-3 mb-2 mt-2">
+                            <div class="custom-card" style="background-image: url('./assest/cart-2-4.png');">
+                            <div class="card-content" style="min-height:100px;">
+                                    <h3 class="card-title">Budget Planning for Buccura Inc.</h3>
+                                    <p class="card-text">Financial Services<span class="arrow">></span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+           
+
+
+            <div class="container mt-5  mb-5">
+                <div class="row   mt-2 d-flex justify-content-center">
+                    <div class="col-1 ">
+                        <img src="./assest/brand-1.jpg" class="img-fluid-1" alt="Brand 1">
+
+                    </div>
+                    <div class="col-1 ">
+                        <img src="./assest/brand-2.png" class="img-fluid-1" alt="Brand 1">
+                    </div>
+                    <div class="col-1 ">
+                        <img src="./assest/brand3.png" class="img-fluid-1" alt="Brand 1">
+                    </div>
+                    <div class="col-1 ">
+                        <img src="./assest/barnd4.png" class="img-fluid-1" alt="Brand 1">
+                    </div>
+                    <div class="col-1 ">
+                        <img src="./assest/brand5.png" class="img-fluid-1" alt="Brand 1">
+                    </div>
+                    <div class="col-1 ">
+                        <img src="./assest/brand6.png" class="img-fluid-1" alt="Brand 1">
+                    </div>
+
+                </div>
+
+            </div>
+
+</div>
+</div>
+</div>
+ 
+ 

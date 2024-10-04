@@ -1,0 +1,199 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage
+@{
+	Layout = "master.cshtml";
+}
+<!-- Content -->
+  <div class="row text-center">
+    <h1>Contact Us</h1>
+    <p>Fill out the form below and we will get back to you as soon as possible.</p>
+
+</div>
+
+    <div class="row d-flex justify-content-center  rowsh mt-5" >
+
+      <div class="row  justify-content-center">
+        <div class="col-3  mt-4  md-flex justify-content-end">
+          <img src="./assest/about-9.png" alt="Bildbeskrivning" class="img-fluid-2 ">
+        </div>
+  
+        <!-- Andra kolumnen med text, adress, e-post och telefon -->
+        <div class="col-3 contact-contact">
+          <div class='letu'>
+            Let us know about your next project</div>
+          <div class="row mt-2">
+            <div class="col-1 "><svg id='map-pin_24' width='24' height='24' viewBox='0 0 24 24'
+                xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'>
+                <rect width='24' height='24' stroke='none' fill='#000000' opacity='0' />
+                <g transform="matrix(1 0 0 1 12 12)">
+                  
+                    <g transform="matrix(1 0 0 1 0 0)">
+                      <path
+                        style="stroke: none; stroke-width: 2; stroke-dasharray: none; stroke-linecap: round; stroke-dashoffset: 0; stroke-linejoin: round; stroke-miterlimit: 4; fill: none; fill-rule: nonzero; opacity: 1;"
+                        transform=" translate(-12, -12)" d="M 0 0 L 24 0 L 24 24 L 0 24 z" stroke-linecap="round" />
+                    </g>
+                    <g transform="matrix(1 0 0 1 0 -1)">
+                      <circle
+                        style="stroke: #D9C3A9; stroke-width: 2; stroke-dasharray: none; stroke-linecap: round; stroke-dashoffset: 0; stroke-linejoin: round; stroke-miterlimit: 4; fill: none; fill-rule: nonzero; opacity: 1;"
+                        cx="0" cy="0" r="3" />
+                    </g>
+                    <g transform="matrix(1 0 0 1 0 0.24)">
+                      <path
+                        style="stroke: #D9C3A9; stroke-width: 2; stroke-dasharray: none; stroke-linecap: round; stroke-dashoffset: 0; stroke-linejoin: round; stroke-miterlimit: 4; fill: none; fill-rule: nonzero; opacity: 1;"
+                        transform=" translate(-12, -12.24)"
+                        d="M 17.657 16.657 L 13.414 20.9 C 12.633114934768514 21.680097646814314 11.367885065231485 21.680097646814314 10.587 20.9 L 6.343 16.656999999999996 C 3.218924109366008 13.532763117682109 3.219011115499651 8.467518226808854 6.343194334844699 5.343388671358445 C 9.467377554189747 2.219259115908036 14.532622445810256 2.2192591159080344 17.656805665155304 5.343388671358447 C 20.780988884500353 8.46751822680886 20.78107589063399 13.532763117682114 17.656999999999996 16.657 z"
+                        stroke-linecap="round" />
+                    </g>
+                  </g>
+              
+              </svg>
+            </div>
+            <div class="col-5 "><strong>Office location</strong>
+              <p class="mt-1" style="color: #4F5955;"> Klarabergsviadukten 90, 111 52 Stockholm</p>
+            </div>
+          </div>
+          <div class="row mt-2">
+            <div class="col-1"> <svg width='24' height='24' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'
+                xmlns:xlink='http://www.w3.org/1999/xlink'>
+                <rect width='24' height='24' stroke='none' fill='#000000' opacity='0' />
+                <g transform="matrix(0.69 0 0 0.69 12 12)">
+                  <path
+                    style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-dashoffset: 0; stroke-linejoin: miter; stroke-miterlimit: 4; fill: #D9C3A9; fill-rule: nonzero; opacity: 1;"
+                    transform=" translate(-17.48, -14.51)"
+                    d="M 25 0 L 25 5 L 20 5 L 20 7 L 25 7 L 25 12 L 27 12 L 27 7 L 32 7 L 32 5 L 27 5 L 27 0 L 25 0 z M 8.6503906 3.0058594 C 8.1255067 3.0058594 7.6010996 3.1771036 7.1738281 3.5214844 L 7.125 3.5605469 L 3.9804688 6.8046875 L 4.046875 6.7421875 C 3.0062406 7.6384134 2.7194504 9.0541178 3.1660156 10.244141 C 4.0086833 12.674074 6.1568506 17.372953 10.394531 21.605469 C 14.641274 25.857394 19.389499 27.91343 21.738281 28.830078 L 21.761719 28.837891 L 21.785156 28.845703 C 22.999558 29.252758 24.311449 28.962441 25.251953 28.158203 L 25.28125 28.132812 L 28.40625 25.007812 C 29.235762 24.178301 29.235762 22.724043 28.40625 21.894531 L 24.308594 17.792969 C 23.476725 16.9611 22.023275 16.9611 21.191406 17.792969 L 19.207031 19.777344 C 18.496637 19.438281 16.74879 18.558644 15.087891 16.974609 C 13.448585 15.411343 12.61169 13.604382 12.308594 12.90625 L 14.308594 10.90625 C 15.186189 10.028655 15.236115 8.5219515 14.224609 7.7167969 L 14.316406 7.8007812 L 10.173828 3.5605469 L 10.126953 3.5214844 C 9.6996708 3.1771284 9.1752746 3.0058594 8.6503906 3.0058594 z M 8.6523438 5 C 8.7236064 4.9998777 8.7939074 5.026734 8.8632812 5.0800781 L 12.929688 9.2441406 L 12.978516 9.2832031 C 12.967016 9.2740531 13.016941 9.3697821 12.894531 9.4921875 L 9.9375 12.449219 L 10.166016 13.052734 C 10.166016 13.052734 11.294663 16.121404 13.707031 18.421875 C 16.079259 20.684317 19.003906 21.919922 19.003906 21.919922 L 19.626953 22.185547 L 22.605469 19.207031 C 22.7736 19.0389 22.7264 19.0389 22.894531 19.207031 L 26.992188 23.308594 C 27.162675 23.479082 27.162676 23.423262 26.992188 23.59375 L 23.945312 26.640625 C 23.481361 27.034971 23.00205 27.13833 22.425781 26.947266 C 20.163651 26.062686 15.739269 24.126878 11.808594 20.191406 C 7.8506547 16.238292 5.7997308 11.746595 5.046875 9.5703125 L 5.0429688 9.5585938 L 5.0371094 9.5449219 C 4.8856915 9.1444833 4.9963719 8.5637134 5.3515625 8.2578125 L 5.3847656 8.2285156 L 8.4394531 5.0800781 C 8.508857 5.0272234 8.5810811 5.0001223 8.6523438 5 z"
+                    stroke-linecap="round" />
+                </g>
+              </svg>
+            </div>
+            <div class="col-4 "><strong>Phone number</strong>
+              <p class="mt-1" style="color: #4F5955;">+46 8 123 456 75</p>
+            </div>
+          </div>
+          <div class="row mt-2">
+            <div class="col-1 "><svg width='24' height='24' viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'
+                xmlns:xlink='http://www.w3.org/1999/xlink'>
+                <rect width='24' height='24' stroke='none' fill='#000000' opacity='0' />
+                <g transform="matrix(1 0 0 1 12 12)">
+                  
+                    <g transform="matrix(1 0 0 1 0 0)">
+                      <path
+                        style="stroke: none; stroke-width: 2; stroke-dasharray: none; stroke-linecap: round; stroke-dashoffset: 0; stroke-linejoin: round; stroke-miterlimit: 4; fill: none; fill-rule: nonzero; opacity: 1;"
+                        transform=" translate(-12, -12)" d="M 0 0 L 24 0 L 24 24 L 0 24 z" stroke-linecap="round" />
+                    </g>
+                    <g transform="matrix(1 0 0 1 0 0)">
+                      <rect
+                        style="stroke: #D9C3A9; stroke-width: 2; stroke-dasharray: none; stroke-linecap: round; stroke-dashoffset: 0; stroke-linejoin: round; stroke-miterlimit: 4; fill: none; fill-rule: nonzero; opacity: 1;"
+                        x="-9" y="-7" rx="2" ry="2" width="18" height="14" />
+                    </g>
+                    <g transform="matrix(1 0 0 1 0 -2)">
+                      <polyline
+                        style="stroke: #D9C3A9; stroke-width: 2; stroke-dasharray: none; stroke-linecap: round; stroke-dashoffset: 0; stroke-linejoin: round; stroke-miterlimit: 4; fill: none; fill-rule: nonzero; opacity: 1;"
+                        points="-9,-3 0,3 9,-3 " />
+                    </g>
+                  </g>
+                
+              </svg>
+            </div>
+            <div class="col-4"><strong>E-mail address</strong>
+              <p class="mt-1" style="color: #4F5955;">sales@onatrix.com</p>
+            </div>
+  
+          </div>
+        </div>
+      </div>
+  
+    </div>
+
+
+    <div class="map-responsive">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d242118.14143329146!2d13.169225751556662!3d55.6049811945176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4653a4be7fb252cf%3A0x8be3f671ff16d204!2sMalm%C3%B6%2C%20Sverige!5e0!3m2!1ssv!2sse!4v1615917742172!5m2!1ssv!2sse"
+        width="100%" height="650" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    <!-- Contact Form -->
+    <div class="container contact-contact-2 ">
+      <div class="row d-flex justify-content-center ">
+          <div class='requestacallback mt-5'>
+        Request a call back</div>
+      </div>
+      <div class="row d-flex justify-content-center">
+        <div class='letusknowaboutyournextproject'>
+          Let us know about your
+          next project</div>
+      </div>
+
+      <div class="row d-flex justify-content-center mt-3 ">
+        <div  class='ulasemp'>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas consectetur, ligula semper sagittis lobortis, eros metus efficitur purus</div>
+      </div>
+    
+      <form >
+        <div class="row mb-3 mt-3">
+          <!-- Name -->
+          <div class="col-md-6">
+            <input type="text" class="form-control" id="name" placeholder="Name" required>
+          </div>
+      
+          <!-- Phone -->
+          <div class="col-md-6">
+            <input type="tel" class="form-control" id="phone" placeholder="Phone" required>
+          </div>
+        </div>
+      
+        <div class="row mb-3">
+          <!-- Email -->
+          <div class="col-md-6">
+            
+            <input type="email" class="form-control" id="email" placeholder="Email address" required>
+          </div>
+      
+          <!-- Dropdown: Service Selection -->
+          <div class="col-md-6 ">
+            <select class="form-select" id="service" required>
+              <option selected>Financial Consulting</option>
+              <option value="financial-consulting">Financial Consulting</option>
+            </select>
+          </div>
+        </div>
+      
+        <!-- Submit Button -->
+         <div class="row d-flex justify-content-center mt-1  mb-4">
+          <div class="col-1 ">
+            <button type="button" class="btn btn-secondary">Submit</button>
+          </div>
+         
+        </div>
+        
+      </form>
+      
+  </div>
+  <div class="container mt-5  mb-5"></div>
+    <div class="row   mt-2 d-flex justify-content-center mb-5">
+      
+
+        <div class="col-1 ">
+        <img src="./assest/brand-1.jpg" class="img-fluid-2" alt="Brand 1">
+
+        </div>
+        <div class="col-1 ">
+        <img src="./assest/brand-2.png" class="img-fluid-2" alt="Brand 1">
+        </div>
+        <div class="col-1 ">
+        <img src="./assest/brand3.png" class="img-fluid-2" alt="Brand 1">
+        </div>
+                
+
+        
+        <div class="col-1 ">
+            <img src="./assest/barnd4.png" class="img-fluid-2" alt="Brand 1">
+        </div>
+        <div class="col-1 ">
+        <img src="./assest/brand5.png" class="img-fluid-2" alt="Brand 1">
+        </div>
+        <div class="col-1 ">
+        <img src="./assest/brand6.png" class="img-fluid-2" alt="Brand 1">
+        </div>
+
+    </div>
+
+</div>
